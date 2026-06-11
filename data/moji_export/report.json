@@ -1,0 +1,26 @@
+{
+  "source": "/Users/lsc/Library/Containers/BF62961C-3055-4850-AB44-50A7F2C8ED7E/Data/Documents/moji_db/PublicDB.realm",
+  "coreSource": null,
+  "generatedAt": "2026-06-08T04:05:30.973Z",
+  "classCounts": {
+    "Article": 44,
+    "DB_AudioTag": 705,
+    "DB_Notify": 0,
+    "DB_QAAnswer": 0,
+    "DB_QAQuestion": 0,
+    "MOJiBaseCacheModel": 0,
+    "Nanews": 0
+  },
+  "folders": [],
+  "totals": {
+    "words": 0,
+    "coreWords": 0,
+    "folderItems": 0,
+    "wordListPlayItems": 0,
+    "usageRecords": 0,
+    "resolvedFolderWords": 0,
+    "resolvedWordListWords": 0
+  },
+  "metadataSummary": {},
+  "metadataSamples": {}
+}

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>个人摄影主页</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="回到首页">
+        <span class="brand-mark">PH</span>
+        <span class="brand-text">Photo Home</span>
+      </a>
+      <nav class="site-nav" aria-label="主导航">
+        <a href="#works">作品</a>
+        <a href="#series">系列</a>
+        <a href="#about">关于</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Street / Landscape / Human moments</p>
+          <h1>把日常里短暂的光，留下来。</h1>
+          <p class="hero-intro">
+            这里可以放你的街头人文、自然风光和旅途中偶然遇见的画面。黑白主调会让照片本身成为第一视觉。
+          </p>
+        </div>
+        <div class="hero-frame" aria-label="精选摄影作品预览">
+          <div class="hero-image placeholder-image">
+            <span>Featured Photo</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="works" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Works</p>
+          <h2>精选作品</h2>
+        </div>
+        <div class="photo-grid" id="photoGrid"></div>
+      </section>
+
+      <section id="series" class="section series-section">
+        <div class="section-heading">
+          <p class="eyebrow">Series</p>
+          <h2>照片系列</h2>
+        </div>
+        <div class="series-list">
+          <article>
+            <span>01</span>
+            <h3>街头人文</h3>
+            <p>陌生人的神情、城市边角、偶然重叠的动作和光线。</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>自然风光</h3>
+            <p>山、树、云、海和长时间凝视之后出现的安静秩序。</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>旅行切片</h3>
+            <p>路上的临时停顿，像给记忆做一个轻轻的标记。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="section about-section">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2>关于我</h2>
+        </div>
+        <p>
+          这里写一小段你的摄影介绍。比如你喜欢拍什么、为什么拍、常用设备、所在城市，或者留一个邮箱方便别人联系你。
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© <span id="year"></span> Your Name</span>
+      <a href="mailto:you@example.com">you@example.com</a>
+    </footer>
+
+    <dialog class="lightbox" id="lightbox">
+      <button class="lightbox-close" id="closeLightbox" aria-label="关闭大图">×</button>
+      <img id="lightboxImage" alt="" />
+      <div class="lightbox-caption">
+        <strong id="lightboxTitle"></strong>
+        <span id="lightboxMeta"></span>
+      </div>
+    </dialog>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

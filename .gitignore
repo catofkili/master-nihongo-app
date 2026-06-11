@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+
+# Database backups
+archive_backups/
+*.before_*.sqlite3
+
+# Keep main database but ignore if needed
+# japanese_words.sqlite3
+
+# Build
+.build/
+dist/
+node_modules/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+*.err
+*.err.log
+*.run.log
+
+# Realm backup
+*.realm
+
+# Test outputs
+test-*.err
+test-*.log

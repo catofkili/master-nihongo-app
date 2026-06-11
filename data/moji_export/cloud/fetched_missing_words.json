@@ -1,0 +1,440 @@
+{
+  "fetched": [
+    {
+      "objectId": "19891788",
+      "spell": "～子",
+      "pron": "～こ",
+      "excerpt": "[接尾] ……子；阿……。（女の名にそえる）；……人；……东西。（（それをする、また、その状態にある）人の意）",
+      "briefInfo": "孩子；种子；子嗣；女子；微小的事物",
+      "tags": "N1",
+      "accent": "",
+      "type": null
+    },
+    {
+      "objectId": "198935965",
+      "spell": "何れ",
+      "pron": "どれ",
+      "excerpt": "[代名] 哪个，哪一个。",
+      "briefInfo": "哪个；哪些；哪一个；哪一些",
+      "tags": "N5",
+      "accent": "①",
+      "type": 1
+    },
+    {
+      "objectId": "198947357",
+      "spell": "～君",
+      "pron": "～くん",
+      "excerpt": "[接尾] （用于同辈或下级男性姓名后）君，同志。（友達や目下の人の名や姓、または姓名などに付けて、親しみや軽い敬意を表す。主に男性が用いる。）",
+      "briefInfo": "用于称呼男性或男孩，表示亲昵或尊敬；用于称呼比自己年轻的男性同事或下属。",
+      "tags": "",
+      "accent": "①",
+      "type": 1
+    },
+    {
+      "objectId": "198987405",
+      "spell": "通り",
+      "pron": "とおり",
+      "excerpt": "[名] 大街，马路。（道路、通路など、人や車などが通るための、街中の道。）；来往，通行。（往来。ゆきき。通行、通過。）；（风、水等）流通，通。（つきぬけること。通じること。達すること。）；通顺；［声が］响亮。（届くことを表す。）；了解，理解，领会；［評判になる］人缘，声誉；［よく知られている］众所周知『成』，通用。（世間に行われること。通用、流通のこと。受け入れられること。了解されること。）；正如上文所言。（それと同じ経過をたどる、また同じ状態にあること。それと同様なこと。）；〔種類〕种类，种。（方法・様式の種類を数える語。）；〔組〕套，组。（計数のために数える語。）",
+      "briefInfo": "道路；通顺；照旧；按照",
+      "tags": "N3#N4",
+      "accent": "③",
+      "type": 1
+    },
+    {
+      "objectId": "1H34u1UE1j",
+      "spell": "そして",
+      "pron": "そして",
+      "excerpt": "[接续] 然后。；于是。；而，又，而且。",
+      "briefInfo": "而且；然后；接着",
+      "tags": "N5",
+      "accent": "⓪",
+      "type": 1
+    },
+    {
+      "objectId": "2CnJ2ptQft",
+      "spell": "要る",
+      "pron": "いる",
+      "excerpt": "[自动·五段] 要，需要，必要。",
+      "briefInfo": "需要；必要",
+      "tags": "N1#N2#N4#N5",
+      "accent": "⓪",
+      "type": 1
+    },
+    {
+      "objectId": "2k8aGnqdkR",
+      "spell": "アメリカ",
+      "pron": "あめりか",
+      "excerpt": "[名] America美洲，美洲大陆。",
+      "briefInfo": "美国;美洲",
+      "tags": "N4",
+      "accent": "⓪",
+      "type": 1
+    },
+    {
+      "objectId": "528UPB4yZl",
+      "spell": "お店",
+      "pron": "おみせ",
+      "excerpt": "[名] 商店，小店。",
+      "briefInfo": "商店;店铺",
+      "tags": "",
+      "accent": "⓪",
+      "type": 1
+    },
+    {
+      "objectId": "6v6vVbfWNS",
+      "spell": "どういたしまして",
+      "pron": "どういたしまして",
+      "excerpt": "[惯用] 回答对方时的自谦客套用语）不敢当，岂敢，哪儿的话，哪里话，没有的话，算不了什么，没啥没啥，好说好说，不客气，太客气。",
+      "briefInfo": "不用谢；不客气；没关系",
+      "tags": "",
+      "accent": "①",
+      "type": 1
+    },
+    {
+      "objectId": "7lHbZGOrjJ",
+      "spell": "いただきます",
+      "pron": "いただきます",
+      "excerpt": "[惯用] 吃饭前的致辞。那我开动了。",
+      "briefInfo": "开始用餐；接受、领受",
+      "tags": "",
+      "accent": "",
+      "type": 1
+    },
+    {
+      "objectId": "8a1NY3TSdk",
+      "spell": "支社長",
+      "pron": "ししゃちょう",
+      "excerpt": "[名] 分公司经理",
+      "briefInfo": "分公司经理；分公司总经理",
+      "tags": "",
+      "accent": "③",
+      "type": 1
+    },
+    {
+      "objectId": "8suC1LE9ld",
+      "spell": "すみません",
+      "pron": "すみません",
+      "excerpt": "[接续] 劳驾，对不起，谢谢，借光",
+      "briefInfo": "",
+      "tags": "",
+      "accent": "⓪",
+      "type": 1
+    },
+    {
+      "objectId": "9MaAuSCVSJ",
+      "spell": "ディズニーランド",
+      "pron": "でぃずにーらんど",
+      "excerpt": "[名] 迪士尼乐园。",
+      "briefInfo": "",
+      "tags": "N5",
+      "accent": "⑤",
+      "type": 1
+    },
+    {
+      "objectId": "9z03p4xFBF",
+      "spell": "どの",
+      "pron": "どの",
+      "excerpt": "[连体词] 哪个，哪。对三个以上而又不明确限定的事物或人而言。（「どれ」と指せるような関係にある文章を表す。）；どのつらさげて。／有什么脸；恬不知耻。",
+      "briefInfo": "哪个；哪一位",
+      "tags": "",
+      "accent": "①",
+      "type": 1
+    },
+    {
+      "objectId": "AiVJ6NPBXq",
+      "spell": "くれる",
+      "pron": "くれる",
+      "excerpt": "[动·一段] 给我做事。（他者がこちら側の利益となることをする意を表す。）；给（我）。（他者がこちら側へ物を寄越す。）；（含有鄙意地）给；［施す］施舍。（他者に物を与える。蔑んだ言い方。）",
+      "briefInfo": "",
+      "tags": "N4",
+      "accent": "⓪",
+      "type": 1
+    },
+    {
+      "objectId": "D3PCf3mK6h",
+      "spell": "中華街",
+      "pron": "ちゅうかがい",
+      "excerpt": "[名] 中华街。",
+      "briefInfo": "",
+      "tags": "N5",
+      "accent": "③",
+      "type": 1
+    },
+    {
+      "objectId": "DoAmFkppsP",
+      "spell": "お先に失礼します",
+      "pron": "おさきにしつれいします",
+      "excerpt": "[惯用] 我先走了，我先告辭了。",
+      "briefInfo": "我先告辞了；我先失陪了；我先走了。",
+      "tags": "",
+      "accent": "⓪②",
+      "type": 1
+    },
+    {
+      "objectId": "F8PCX4Kdqv",
+      "spell": "いいえ",
+      "pron": "いいえ",
+      "excerpt": "[感动] 不，不是，没有。（否定。）",
+      "briefInfo": "不是；不对；没有",
+      "tags": "N5",
+      "accent": "③",
+      "type": 1
+    },
+    {
+      "objectId": "HBZBTpWXgy",
+      "spell": "それから",
+      "pron": "それから",
+      "excerpt": "[接续] 请谈下去，往下讲。后来又怎样？（話を促す。）；其次，接着，以后，而且。（その後。）；还有，再加上。（そして。また。）",
+      "briefInfo": "然后；接着；此外",
+      "tags": "",
+      "accent": "⓪",
+      "type": 1
+    },
+    {
+      "objectId": "K1YnCBVUcp",
+      "spell": "外国",
+      "pron": "がいこく",
+      "excerpt": "[名] 外国，国外，外洋。",
+      "briefInfo": "外国；异国；他乡",
+      "tags": "N1#N2#N5",
+      "accent": "⓪",
+      "type": 1
+    },
+    {
+      "objectId": "L5s6P2w73s",
+      "spell": "あれ",
+      "pron": "あれ",
+      "excerpt": "[感动] 呀！哎呀！哎，哎哟。（意外な事に気づいた時に思わず出す声。）",
+      "briefInfo": "呀，哎呀",
+      "tags": "N4",
+      "accent": "⓪",
+      "type": 1
+    },
+    {
+      "objectId": "MaIZBGG5p0",
+      "spell": "綺麗",
+      "pron": "きれい",
+      "excerpt": "[形动] （身姿、容貌）美丽，精致。；清晰。；完全，彻底，干干净净。；（物品、风景）美丽，漂亮，好看。；洁净，干净。；整洁。；纯洁。",
+      "briefInfo": "漂亮；美丽；干净；整洁",
+      "tags": "N5",
+      "accent": "①",
+      "type": 1
+    },
+    {
+      "objectId": "N3gCstspue",
+      "spell": "とても",
+      "pron": "とても",
+      "excerpt": "[副词] 非常，很，挺。；（后接否定）无论如何也……，怎么也……。",
+      "briefInfo": "非常；很；极其",
+      "tags": "N1#N2#N5",
+      "accent": "⓪③",
+      "type": 1
+    },
+    {
+      "objectId": "Nyo80qnbik",
+      "spell": "いけない",
+      "pron": "いけない",
+      "excerpt": "[形] 禁止，不允许。；坏，不好，劣质。；错误，不合拍。；不好，不对，没希望。；有缺点，出故障，身体不好。",
+      "briefInfo": "不行；不可以；不好；不能",
+      "tags": "N3",
+      "accent": "⓪",
+      "type": 1
+    },
+    {
+      "objectId": "PpmMK4YiqJ",
+      "spell": "する",
+      "pron": "する",
+      "excerpt": "[名·自他动·サ变] 使……成为，把……变成。（あるものを何かにあてる、何かの位置にすえる、代えるなどの意を表す。）；色，形，性质等处于某种状态。（その状態・状況にある意、また、それをもたらす意を表す。）；干，做，办。（その動作を行う）；担任，当。（何かの役・つとめをする。）；感觉到，有……的感觉。（その事柄が起るのが感ぜられる意を表す。）",
+      "briefInfo": "做；干；从事；担任",
+      "tags": "",
+      "accent": "⓪",
+      "type": 1
+    },
+    {
+      "objectId": "QiEB7Jav9I",
+      "spell": "如何",
+      "pron": "いかが",
+      "excerpt": "[副词] （表示质疑）如何。；（表示邀请）怎么样。；如何。；（表示质疑）怎么样，如何。",
+      "briefInfo": "",
+      "tags": "N4#N5#高考",
+      "accent": "②",
+      "type": 1
+    },
+    {
+      "objectId": "UAVAcOumYI",
+      "spell": "いってきます",
+      "pron": "いってきます",
+      "excerpt": "[惯用] 我走了，是一种常用的套话，只能出门时对留守的人说。",
+      "briefInfo": "出门了；我走了",
+      "tags": "",
+      "accent": "",
+      "type": 1
+    },
+    {
+      "objectId": "VEicjM6eum",
+      "spell": "この",
+      "pron": "この",
+      "excerpt": "[连体词] 这，这个。（話してに近い物事を指す。話し手が言ったりしたことを指す。最近の。以来。）",
+      "briefInfo": "这个；此",
+      "tags": "",
+      "accent": "⓪",
+      "type": 1
+    },
+    {
+      "objectId": "WqVvgVW03B",
+      "spell": "それで",
+      "pron": "それで",
+      "excerpt": "[接续] 因此，所以。用以承上启下。；那么，后来。催促对方继续说下去的用语。；因此，因而，所以。",
+      "briefInfo": "因此；那么",
+      "tags": "N4",
+      "accent": "⓪",
+      "type": 1
+    },
+    {
+      "objectId": "XpJnhPO9RT",
+      "spell": "お風呂",
+      "pron": "おふろ",
+      "excerpt": "[名] 澡堂，浴室",
+      "briefInfo": "浴缸；浴室；洗澡",
+      "tags": "",
+      "accent": "②",
+      "type": 1
+    },
+    {
+      "objectId": "YBsb2Nekya",
+      "spell": "エレベーター",
+      "pron": "えれべーたー",
+      "excerpt": "[名] 电梯，升降机。",
+      "briefInfo": "电梯；升降机",
+      "tags": "N5#考研",
+      "accent": "③",
+      "type": 1
+    },
+    {
+      "objectId": "Ym370gFCpI",
+      "spell": "それに",
+      "pron": "それに",
+      "excerpt": "[接续] 而且，再加上",
+      "briefInfo": "而且；此外；再加上",
+      "tags": "N4",
+      "accent": "⓪",
+      "type": 1
+    },
+    {
+      "objectId": "aOvvUE2UwN",
+      "spell": "とうとう",
+      "pron": "とうとう",
+      "excerpt": "[副词] 终于，到底，终究，结局。",
+      "briefInfo": "终于；到底；最终",
+      "tags": "",
+      "accent": "①",
+      "type": 1
+    },
+    {
+      "objectId": "awBC4RadeS",
+      "spell": "いえ",
+      "pron": "いえ",
+      "excerpt": "[感动] 不，不是。",
+      "briefInfo": "不；不是",
+      "tags": "N5",
+      "accent": "⓪",
+      "type": 1
+    },
+    {
+      "objectId": "eISuqzwIFl",
+      "spell": "そこ",
+      "pron": "そこ",
+      "excerpt": "[代名] 那儿，那里，那边。；那一点，那儿。；那时。",
+      "briefInfo": "那里；那个地方；那一点",
+      "tags": "",
+      "accent": "⓪",
+      "type": 1
+    },
+    {
+      "objectId": "gEskssth9I",
+      "spell": "ところで",
+      "pron": "ところで",
+      "excerpt": "[接续] 话说回来，转移话题时用。（話題を変えて話しはじめる時に用いる。）；即便，即使，纵令。以不起作用或毫无结果的事情为前提，表示假定的转折条件。（逆接条件を表す。前の事柄が無益なものに、また、好ましくない状態になりそうだという予想のもとで、後に結びつける。）",
+      "briefInfo": "顺便；附带；话说回来",
+      "tags": "N4#高考",
+      "accent": "③",
+      "type": 1
+    },
+    {
+      "objectId": "hzpPfDp0MB",
+      "spell": "どのぐらい",
+      "pron": "どのぐらい",
+      "excerpt": "[副词] 多少，程度如何。",
+      "briefInfo": "大约多少；多久；多远",
+      "tags": "N5",
+      "accent": "⓪①",
+      "type": 1
+    },
+    {
+      "objectId": "iGUnHm4Gzy",
+      "spell": "名産品",
+      "pron": "めいさんひん",
+      "excerpt": "[名] 名产，特产，当地有名的产品。",
+      "briefInfo": "",
+      "tags": "",
+      "accent": "⓪",
+      "type": 1
+    },
+    {
+      "objectId": "jqFRGarqpg",
+      "spell": "さようなら",
+      "pron": "さようなら",
+      "excerpt": "[感动] 再见。再会。〔あいさつ。〕",
+      "briefInfo": "再见；告别",
+      "tags": "",
+      "accent": "④⑤",
+      "type": 1
+    },
+    {
+      "objectId": "m6CsfQ7Sfp",
+      "spell": "やる",
+      "pron": "やる",
+      "excerpt": "[他动·五段] 使去。让去。打发。；消（愁）。安慰。；[以…てやる的形式]表示为别人做某事。；吃，喝。；给予（比自己地位，辈分低的人，动植物以某种东西）。；朝向某处；表示以愤怒，憎恨的心情对待对方。；派遣。；做，干，进行。",
+      "briefInfo": "做；给；进行；派遣",
+      "tags": "",
+      "accent": "⓪",
+      "type": 1
+    },
+    {
+      "objectId": "rj18w4p9kA",
+      "spell": "ヨーロッパ",
+      "pron": "よーろっぱ",
+      "excerpt": "[名] Europe欧洲。",
+      "briefInfo": "欧洲",
+      "tags": "N5#考研",
+      "accent": "③",
+      "type": 1
+    },
+    {
+      "objectId": "s36MDH4iJX",
+      "spell": "どれぐらい",
+      "pron": "どれぐらい",
+      "excerpt": "[名] 表示某种程度不定的词。多少。",
+      "briefInfo": "多少；多久",
+      "tags": "N5",
+      "accent": "⓪",
+      "type": 1
+    },
+    {
+      "objectId": "tH46GACGS8",
+      "spell": "お願いします",
+      "pron": "おねがいします",
+      "excerpt": "[惯用] 麻煩您了，拜託您了",
+      "briefInfo": "请求；拜托；请",
+      "tags": "",
+      "accent": "",
+      "type": 1
+    }
+  ],
+  "failed": [
+    [
+      "198985277",
+      "URLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)'))"
+    ]
+  ]
+}

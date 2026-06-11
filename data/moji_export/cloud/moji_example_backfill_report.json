@@ -1,0 +1,11 @@
+{
+  "generatedAt": "2026-06-08T13:26:08",
+  "apply": true,
+  "candidates": 617,
+  "fetched": 595,
+  "withExample": 560,
+  "updated": 560,
+  "missingExample": 57,
+  "failed": [],
+  "backup": "/Users/lsc/Documents/New project/japanese_words.before_moji_examples.20260608-132608.sqlite3"
+}

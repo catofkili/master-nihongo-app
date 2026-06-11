@@ -1,0 +1,90 @@
+{
+  "result": {
+    "page": 1,
+    "limit": 20,
+    "count": 5,
+    "result": [
+      {
+        "createdAt": "2026-06-02T12:49:51.018Z",
+        "updatedAt": "2026-06-04T16:31:12.356Z",
+        "createdBy": "k515cVWkKq",
+        "targetId": "198927613",
+        "targetType": 102,
+        "testTimes": 999,
+        "testDate": 1780590672314,
+        "qCnt": 2,
+        "qWrCnt": 0,
+        "isRight": true,
+        "score": 100,
+        "scheduleId": "kIgUn8H7qA",
+        "id": "33y8wygx5t",
+        "objectId": "33y8wygx5t"
+      },
+      {
+        "createdAt": "2026-06-02T12:49:51.018Z",
+        "updatedAt": "2026-06-04T16:31:12.356Z",
+        "createdBy": "k515cVWkKq",
+        "targetId": "19892998",
+        "targetType": 102,
+        "testTimes": 999,
+        "testDate": 1780590672314,
+        "qCnt": 2,
+        "qWrCnt": 0,
+        "isRight": true,
+        "score": 100,
+        "scheduleId": "kIgUn8H7qA",
+        "id": "hoqfxvuami",
+        "objectId": "hoqfxvuami"
+      },
+      {
+        "createdAt": "2025-06-18T17:10:51.497Z",
+        "updatedAt": "2026-04-15T16:41:49.562Z",
+        "createdBy": "k515cVWkKq",
+        "targetId": "198978208",
+        "targetType": 102,
+        "testTimes": 999,
+        "testDate": 1776271308942,
+        "qCnt": 1,
+        "qWrCnt": 1,
+        "isRight": true,
+        "score": 0,
+        "scheduleId": "kIgUn8H7qA",
+        "id": "236bi19vvq",
+        "objectId": "236bi19vvq"
+      },
+      {
+        "createdAt": "2026-04-01T17:11:03.289Z",
+        "updatedAt": "2026-04-01T17:11:03.314Z",
+        "createdBy": "k515cVWkKq",
+        "targetId": "198941970",
+        "targetType": 102,
+        "testTimes": 999,
+        "testDate": 1775063463289,
+        "qCnt": 0,
+        "qWrCnt": 0,
+        "isRight": true,
+        "score": 100,
+        "scheduleId": "kIgUn8H7qA",
+        "id": "u65bvz9dta",
+        "objectId": "u65bvz9dta"
+      },
+      {
+        "createdAt": "2026-04-01T17:11:03.289Z",
+        "updatedAt": "2026-04-01T17:11:03.314Z",
+        "createdBy": "k515cVWkKq",
+        "targetId": "198958129",
+        "targetType": 102,
+        "testTimes": 999,
+        "testDate": 1775063463289,
+        "qCnt": 0,
+        "qWrCnt": 0,
+        "isRight": true,
+        "score": 100,
+        "scheduleId": "kIgUn8H7qA",
+        "id": "q29nxcn3o8",
+        "objectId": "q29nxcn3o8"
+      }
+    ],
+    "code": 200
+  }
+}
