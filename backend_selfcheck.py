@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import tempfile
+from contextlib import contextmanager
 from pathlib import Path
 
 import server
@@ -11,6 +12,16 @@ def reset_temp_db() -> tempfile.TemporaryDirectory:
     server.DB_PATH = Path(tempdir.name) / "test.sqlite3"
     server.init_db()
     return tempdir
+
+
+@contextmanager
+def checked_connection():
+    conn = server.connect()
+    try:
+        with conn:
+            yield conn
+    finally:
+        conn.close()
 
 
 def answer(conn, word_id: int, answer_value: str) -> None:
@@ -40,7 +51,7 @@ def answer(conn, word_id: int, answer_value: str) -> None:
 def check_critical_reset_once() -> None:
     tempdir = reset_temp_db()
     try:
-        with server.connect() as conn:
+        with checked_connection() as conn:
             server.record_critical_review(conn, 1)
             server.reset_previous_critical_reviews(conn, "2999-01-01")
             row = conn.execute("SELECT score FROM progress WHERE word_id = 1").fetchone()
@@ -56,7 +67,7 @@ def check_critical_reset_once() -> None:
 def check_critical_backfill_from_reviews() -> None:
     tempdir = reset_temp_db()
     try:
-        with server.connect() as conn:
+        with checked_connection() as conn:
             conn.execute(
                 "INSERT INTO reviews (word_id, answer, score_after, reviewed_on) VALUES (?, ?, ?, ?)",
                 (1, "forgot", server.CRITICAL_SCORE, "2999-01-01"),
@@ -77,7 +88,7 @@ def check_critical_backfill_from_reviews() -> None:
 def check_daily_decay_stops_at_minus_ten() -> None:
     tempdir = reset_temp_db()
     try:
-        with server.connect() as conn:
+        with checked_connection() as conn:
             conn.execute(
                 """
                 UPDATE progress
@@ -100,7 +111,7 @@ def check_daily_decay_stops_at_minus_ten() -> None:
 def check_done_stays_done() -> None:
     tempdir = reset_temp_db()
     try:
-        with server.connect() as conn:
+        with checked_connection() as conn:
             server.set_phase(conn, "done")
             card, phase = server.next_card(conn)
             assert card is None
@@ -112,7 +123,7 @@ def check_done_stays_done() -> None:
 def check_stage2_records_stage1_order() -> None:
     tempdir = reset_temp_db()
     try:
-        with server.connect() as conn:
+        with checked_connection() as conn:
             answer(conn, 1, "know")
             answer(conn, 2, "know")
             rows = conn.execute(
@@ -126,7 +137,7 @@ def check_stage2_records_stage1_order() -> None:
 def check_stage1_progress_counts_complete_words_over_six() -> None:
     tempdir = reset_temp_db()
     try:
-        with server.connect() as conn:
+        with checked_connection() as conn:
             today = server.TODAY()
             conn.execute("UPDATE progress SET known_forever = 1")
             conn.execute(
@@ -161,7 +172,7 @@ def check_stage1_progress_counts_complete_words_over_six() -> None:
 def check_stage1_task_pool_is_fixed() -> None:
     tempdir = reset_temp_db()
     try:
-        with server.connect() as conn:
+        with checked_connection() as conn:
             conn.execute("UPDATE progress SET known_forever = 1")
             conn.execute(
                 """
@@ -187,7 +198,7 @@ def check_stage1_task_pool_is_fixed() -> None:
 def check_stage1_task_pool_backfills_from_reviews() -> None:
     tempdir = reset_temp_db()
     try:
-        with server.connect() as conn:
+        with checked_connection() as conn:
             today = server.TODAY()
             conn.execute("UPDATE progress SET known_forever = 1")
             conn.execute(
@@ -229,7 +240,7 @@ def check_stage1_task_pool_backfills_from_reviews() -> None:
 def check_seen_word_quick_grade() -> None:
     tempdir = reset_temp_db()
     try:
-        with server.connect() as conn:
+        with checked_connection() as conn:
             page = server.seen_words_page(conn, 0, 5)
             assert page["total"] == 0
             word = server.quick_grade_word(conn, 1, "know")
@@ -246,7 +257,7 @@ def check_seen_word_quick_grade() -> None:
 def check_seen_word_sorting() -> None:
     tempdir = reset_temp_db()
     try:
-        with server.connect() as conn:
+        with checked_connection() as conn:
             conn.execute(
                 """
                 UPDATE progress

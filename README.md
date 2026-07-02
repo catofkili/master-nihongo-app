@@ -1,80 +1,53 @@
 # 日语学习应用
 
-一个结合了词汇和语法学习的日语学习应用，支持间隔重复算法、错题本功能和每日提醒。
-
-## 功能特性
-
-### 词汇学习
-- 📚 **词库管理**：包含 N5-N3 约 2000 个常用词汇
-- 🎯 **智能复习**：基于艾宾浩斯遗忘曲线的间隔重复算法
-- 📊 **学习统计**：追踪学习进度和复习情况
-- ⚠️ **错题本**：自动收集错误单词，针对性复习
-- 🔄 **词汇辨析**：自他动词配对、敬语体系等特殊提示
-- 📝 **例句支持**：部分词汇包含示例句子
-
-### 语法学习
-- 📖 **语法点库**：系统化的日语语法点
-- 💡 **对比学习**：相似语法点的对比表格
-- ✅ **练习测验**：语法点练习和测试功能
-- 📈 **进度跟踪**：记录学习和复习状态
-
-### 系统功能
-- ⏰ **每日提醒**：通过 macOS Calendar 提醒复习
-- 🖥️ **本地运行**：无需联网，数据完全本地化
-- 🌙 **学习日期**：凌晨 4 点前算作前一天（适应晚睡学习习惯）
+一个本地运行的日语词汇和语法学习应用，包含间隔重复、错题复习、每日提醒和本地 SQLite 进度存储。
 
 ## 技术栈
 
-### 后端
-- **Python 3** + SQLite3
-- 简单的 HTTP 服务器（ThreadingHTTPServer）
-- 数据库支持多表设计：单词、语法、进度、复习记录等
-
-### 前端
-- **React 19** + TypeScript
-- **Vite** 构建工具
-- **Tailwind CSS** 样式框架
-- **Lucide React** 图标库
+- 后端：Python 3、SQLite、`ThreadingHTTPServer`
+- 前端：React 19、TypeScript、Vite、Tailwind CSS、Lucide React
+- 运行方式：后端监听 `127.0.0.1:8000`，Vite 开发服代理 `/api` 到后端
 
 ## 项目结构
 
-```
+```text
 .
-├── server.py                  # 后端服务器主文件
-├── seed_words.py             # 词汇种子数据
-├── seed_grammar.py           # 语法种子数据
-├── remind.py                 # 提醒脚本
-├── backend_selfcheck.py      # 后端自检脚本
-├── import_eggrolls_jlpt.py   # JLPT 词库导入工具
-│
-├── japanese_words.sqlite3    # 主数据库文件
-│
-├── src/                      # 前端源代码
-│   ├── App.tsx
-│   ├── main.tsx
-│   ├── components/          # React 组件
-│   ├── pages/               # 页面组件
-│   ├── hooks/               # React Hooks
-│   └── types/               # TypeScript 类型定义
-│
-├── static/                   # 静态资源
-├── data/                     # 数据文件（如汉字变体映射）
-├── tools/                    # 工具脚本
-│
-├── package.json             # Node.js 依赖
-├── requirements.txt         # Python 依赖
-├── tsconfig.json           # TypeScript 配置
-├── tailwind.config.js      # Tailwind 配置
-└── vite.config.ts          # Vite 配置
+├── server.py                 # 后端服务器入口
+├── seed_words.py             # 词汇种子数据，server.py 会直接 import
+├── seed_grammar.py           # 语法种子数据，server.py 会直接 import
+├── backend_selfcheck.py      # 数据库自检/初始化脚本
+├── remind.py                 # 每日提醒脚本
+├── src/                      # React/Vite 前端源码
+├── static/                   # 后端可直接 serve 的静态资源
+├── data/                     # 原始/辅助数据文件
+├── tools/                    # 数据导入、合并、回填工具
+├── scripts/                  # 通用启动、开发、备份、维护脚本
+├── platform/macos/           # macOS .app、.command、launchd 配置
+├── legacy/fallback-web/      # 旧版 fallback Web 资源
+├── docs/                     # 辅助文档和历史状态说明
+├── photo-homepage/           # 独立个人主页，不属于主学习应用
+├── package.json
+├── requirements.txt
+└── vite.config.ts
 ```
 
-## 安装与使用
+## 本地数据库
+
+`japanese_words.sqlite3` 是运行态数据库，包含本机学习进度，现在不再纳入 git。首次运行或需要重建时执行：
+
+```bash
+python3 backend_selfcheck.py
+```
+
+数据库、备份和日志都在 `.gitignore` 中忽略，避免学习/测试过程污染工作区。
+
+## 安装与运行
 
 ### 1. 安装 Python 依赖
 
 ```bash
 python3 -m venv .venv
-source .venv/bin/activate  # macOS/Linux
+source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
@@ -84,78 +57,41 @@ pip install -r requirements.txt
 npm install
 ```
 
-### 3. 初始化数据库（如果需要）
+### 3. 启动后端
 
 ```bash
-python3 backend_selfcheck.py
-```
-
-### 4. 启动应用
-
-**方式一：使用启动脚本**
-```bash
-./打开日语背词.command
-```
-
-**方式二：手动启动**
-```bash
-# 启动后端服务器
 python3 server.py
-
-# 在浏览器访问
-open http://localhost:8800
+# http://127.0.0.1:8000
 ```
 
-### 5. 开发模式（前端）
+### 4. 启动前端开发服
 
 ```bash
 npm run dev
+# http://127.0.0.1:5173
 ```
+
+也可以使用脚本：
+
+```bash
+scripts/start.sh       # 只启动后端
+scripts/dev.sh         # 同时启动后端和 Vite
+```
+
+macOS 桌面入口和提醒配置在 `platform/macos/`。如果使用 launchd plist，需要按本机 clone 路径调整其中的 `cd "$HOME/Documents/master-nihongo-app"`。
 
 ## 数据来源
 
-词库部分导入自 [eggrolls-JLPT10k-v3.5](https://github.com/5mdld/anki-jlpt-decks)
+词库部分导入自 [eggrolls-JLPT10k-v3.5](https://github.com/5mdld/anki-jlpt-decks)。
+
 - 许可：CC BY-NC 4.0
 - 用途：非商业个人学习
 
-## 提醒功能设置
-
-项目包含 macOS launchd 配置文件，可以设置定时提醒：
+## 维护
 
 ```bash
-# 复制 plist 文件到 LaunchAgents
-cp com.lsc.nihongo-reminder.plist ~/Library/LaunchAgents/
-
-# 加载服务
-launchctl load ~/Library/LaunchAgents/com.lsc.nihongo-reminder.plist
+scripts/backup.sh
+scripts/maintenance.sh
 ```
 
-## 数据库表结构
-
-主要表：
-- `words` - 词汇表
-- `progress` - 学习进度
-- `reviews` - 复习记录
-- `grammar_points` - 语法点
-- `grammar_progress` - 语法学习进度
-- `kanji_progress` - 汉字学习进度
-
-## 维护说明
-
-### 备份清理
-数据库备份文件已移至 `archive_backups/` 目录，如不需要可以删除以节省空间。
-
-### 日志文件
-运行日志文件已配置在 `.gitignore` 中，会自动忽略。
-
-## 开发计划
-
-- [ ] 添加更多 N2/N1 词汇
-- [ ] 完善语法点例句
-- [ ] 优化间隔重复算法
-- [ ] 添加语音朗读功能
-- [ ] 支持自定义词库导入
-
-## 许可
-
-个人学习项目。词库数据遵循 CC BY-NC 4.0 许可。
+主要数据库表：`words`、`progress`、`reviews`、`grammar_points`、`grammar_progress`、`kanji_progress`。

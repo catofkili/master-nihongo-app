@@ -8,14 +8,17 @@ __pycache__/
 venv/
 ENV/
 
+# Local database files
+*.sqlite
+*.sqlite3
+*.db
+
 # Database backups
 archive_backups/
 *.before_*.sqlite3
 *.bak_*
 *backup*.sqlite3
 
-# Keep main database but ignore if needed
-# japanese_words.sqlite3
 
 # Build
 .build/
